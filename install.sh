@@ -11,7 +11,6 @@ dirName=$(dirName)
 ## Installing Dependencies
 echo "[INFO] Installing Dependencies..."
 apt-get update -y && sudo apt-get upgrade -y
-apt install nginx mariadb-server mariadb-client php php-{fpm,mysql,common,cli,opcache,readline,mbstring,xml,gd,curl,imagick,gnupg,ldap,imap,zip,bz2,intl,gmp} haveged 
 echo "[INFO] Done..."
 
 ## Installing Databases
