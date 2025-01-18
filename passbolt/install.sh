@@ -160,7 +160,7 @@ sudo -u ${WEB_USER} gpg --armor --export-secret-keys ${ADMIN_EMAIL} | sudo tee $
 
 echo "[INFO] Set Up Passbolt Configuration..."
 PASSBOLT_GPG_KEY=$(ls ${WEBDIR}/.gnupg/openpgp-revocs.d/ | sed 's/\.rev$//')
-if [ ${SSL_CONFIG} != "true" ]; then
+if [[ "${SSL_CONFIG}" != "true" ]]; then
 	sed -i "s/SSL_CONFIG/http/g" ${dirName}/passbolt.php
 else
 	sed -i "s/SSL_CONFIG/https/g" ${dirName}/passbolt.php
