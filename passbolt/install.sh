@@ -70,7 +70,7 @@ EOF
 }
 
 ## Parse Arguments
-while getopts "e:f:l:u:d:s:p:m:w:h" opt; do
+while getopts "e:f:l:u:d:s:p:m:w:U:S:h" opt; do
   case $opt in
     e) ADMIN_EMAIL="${OPTARG}" ;;  # Email Admin
     f) FIRST_NAME="${OPTARG}" ;;  # Nama Depan Admin
