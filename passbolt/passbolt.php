@@ -44,7 +44,7 @@ return [
         // The fully qualified domain name (including protocol) to your application’s root
         // e.g. where the passbolt instance will be reachable to your end users.
         // This information is need to render images in emails for example.
-        'fullBaseUrl' => 'PASSBOLT_URL',
+        'fullBaseUrl' => 'SSL_CONFIG://PASSBOLT_URL',
         // OPTIONAL
         // You can specify the base directory the app resides in.
         // Useful if you are running passbolt in a subdirectory like example.com/passbolt
@@ -57,9 +57,9 @@ return [
         'default' => [
             'host' => 'localhost',
             //'port' => 'non_standard_port_number',
-            'username' => 'DB_USER',
-            'password' => 'DB_PASS',
-            'database' => 'DATABASE',
+            'username' => 'DB_USERNAME',
+            'password' => 'DB_PASSWORD',
+            'database' => 'DB_NAME',
         ],
     ],
 
