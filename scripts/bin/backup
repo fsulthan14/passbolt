@@ -1,0 +1,8 @@
+#!/bin/bash
+
+initBackup() {
+    	local BACKUP_NAME="${1}"
+
+    	BACKUP_BASE="${BACKUP_FOLDER}/${BACKUP_NAME}"
+    	mkdir -p ${BACKUP_BASE}
+}
