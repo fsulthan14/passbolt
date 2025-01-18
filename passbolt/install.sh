@@ -9,6 +9,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 ## Default Values for Optional Arguments
+dirName=$(dirname "$0")
 WEB_USER="www-data"
 ADMIN_EMAIL=""
 FIRST_NAME=""
